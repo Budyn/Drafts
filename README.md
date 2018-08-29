@@ -1,4 +1,4 @@
-# Drafts
+# 🗄 Drafts
 ## App drafts for speedy project setup
 
 Draft.no1 uses:
