@@ -11,6 +11,13 @@
 		53138AD7213758BC00C3D02F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53138AD6213758BC00C3D02F /* Assets.xcassets */; };
 		53138ADA213758BC00C3D02F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53138AD8213758BC00C3D02F /* LaunchScreen.storyboard */; };
 		53138AEA21375E2300C3D02F /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53138AE921375E2300C3D02F /* Swinject.framework */; };
+		53138AEF213761C400C3D02F /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53138AEE213761C400C3D02F /* DependencyContainer.swift */; };
+		53138AF22137624F00C3D02F /* ViewModelAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53138AF12137624F00C3D02F /* ViewModelAssembly.swift */; };
+		53138AF4213762A200C3D02F /* ViewControllerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53138AF3213762A200C3D02F /* ViewControllerAssembly.swift */; };
+		53138AF6213763C900C3D02F /* UtilityAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53138AF5213763C900C3D02F /* UtilityAssembly.swift */; };
+		53138AF8213763F500C3D02F /* BuilderAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53138AF7213763F400C3D02F /* BuilderAssembly.swift */; };
+		53138AFA2137647400C3D02F /* FlowControllerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53138AF92137647400C3D02F /* FlowControllerAssembly.swift */; };
+		53138AFC2137649B00C3D02F /* ServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53138AFB2137649B00C3D02F /* ServiceAssembly.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +27,13 @@
 		53138AD9213758BC00C3D02F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		53138ADB213758BC00C3D02F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53138AE921375E2300C3D02F /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = Carthage/Build/iOS/Swinject.framework; sourceTree = "<group>"; };
+		53138AEE213761C400C3D02F /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
+		53138AF12137624F00C3D02F /* ViewModelAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelAssembly.swift; sourceTree = "<group>"; };
+		53138AF3213762A200C3D02F /* ViewControllerAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerAssembly.swift; sourceTree = "<group>"; };
+		53138AF5213763C900C3D02F /* UtilityAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityAssembly.swift; sourceTree = "<group>"; };
+		53138AF7213763F400C3D02F /* BuilderAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderAssembly.swift; sourceTree = "<group>"; };
+		53138AF92137647400C3D02F /* FlowControllerAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowControllerAssembly.swift; sourceTree = "<group>"; };
+		53138AFB2137649B00C3D02F /* ServiceAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAssembly.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +68,7 @@
 		53138ACE213758BB00C3D02F /* Draft.no1 */ = {
 			isa = PBXGroup;
 			children = (
+				53138AED21375FD600C3D02F /* Dependency Container */,
 				53138AE12137591600C3D02F /* Resources */,
 				53138ACF213758BB00C3D02F /* AppDelegate.swift */,
 				53138AD8213758BC00C3D02F /* LaunchScreen.storyboard */,
@@ -76,6 +91,28 @@
 				53138AE921375E2300C3D02F /* Swinject.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		53138AED21375FD600C3D02F /* Dependency Container */ = {
+			isa = PBXGroup;
+			children = (
+				53138AEE213761C400C3D02F /* DependencyContainer.swift */,
+				53138AF02137623600C3D02F /* Assemblers */,
+			);
+			path = "Dependency Container";
+			sourceTree = "<group>";
+		};
+		53138AF02137623600C3D02F /* Assemblers */ = {
+			isa = PBXGroup;
+			children = (
+				53138AF12137624F00C3D02F /* ViewModelAssembly.swift */,
+				53138AF3213762A200C3D02F /* ViewControllerAssembly.swift */,
+				53138AF92137647400C3D02F /* FlowControllerAssembly.swift */,
+				53138AF7213763F400C3D02F /* BuilderAssembly.swift */,
+				53138AF5213763C900C3D02F /* UtilityAssembly.swift */,
+				53138AFB2137649B00C3D02F /* ServiceAssembly.swift */,
+			);
+			path = Assemblers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +220,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53138AFA2137647400C3D02F /* FlowControllerAssembly.swift in Sources */,
+				53138AFC2137649B00C3D02F /* ServiceAssembly.swift in Sources */,
+				53138AF22137624F00C3D02F /* ViewModelAssembly.swift in Sources */,
+				53138AF8213763F500C3D02F /* BuilderAssembly.swift in Sources */,
+				53138AF6213763C900C3D02F /* UtilityAssembly.swift in Sources */,
+				53138AEF213761C400C3D02F /* DependencyContainer.swift in Sources */,
+				53138AF4213762A200C3D02F /* ViewControllerAssembly.swift in Sources */,
 				53138AD0213758BB00C3D02F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
