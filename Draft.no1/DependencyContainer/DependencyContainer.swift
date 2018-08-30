@@ -7,6 +7,10 @@ import Swinject
 
 class DependencyContainer {
 
+    var resolver: Resolver {
+        return assembler.resolver
+    }
+
     private lazy var assembler: Assembler = {
         return Assembler([
             ViewModelAssembly(),

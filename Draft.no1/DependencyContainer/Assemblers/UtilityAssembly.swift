@@ -8,7 +8,9 @@ import Swinject
 class UtilityAssembly: Assembly {
 
     func assemble(container: Container) {
-
+        container.register(EntryPointDispatcher.self) { _ in
+            EntryPointDispatcherImp()
+        }
     }
 
 }

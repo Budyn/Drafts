@@ -18,6 +18,7 @@
 		53138AF8213763F500C3D02F /* BuilderAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53138AF7213763F400C3D02F /* BuilderAssembly.swift */; };
 		53138AFA2137647400C3D02F /* FlowControllerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53138AF92137647400C3D02F /* FlowControllerAssembly.swift */; };
 		53138AFC2137649B00C3D02F /* ServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53138AFB2137649B00C3D02F /* ServiceAssembly.swift */; };
+		53138AFE2137D2A100C3D02F /* EntrypointDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53138AFD2137D2A100C3D02F /* EntrypointDispatcher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		53138AF7213763F400C3D02F /* BuilderAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderAssembly.swift; sourceTree = "<group>"; };
 		53138AF92137647400C3D02F /* FlowControllerAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowControllerAssembly.swift; sourceTree = "<group>"; };
 		53138AFB2137649B00C3D02F /* ServiceAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAssembly.swift; sourceTree = "<group>"; };
+		53138AFD2137D2A100C3D02F /* EntrypointDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntrypointDispatcher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +70,8 @@
 		53138ACE213758BB00C3D02F /* Draft.no1 */ = {
 			isa = PBXGroup;
 			children = (
-				53138AED21375FD600C3D02F /* Dependency Container */,
+				53138B012137D45B00C3D02F /* EntryPoint */,
+				53138AED21375FD600C3D02F /* DependencyContainer */,
 				53138AE12137591600C3D02F /* Resources */,
 				53138ACF213758BB00C3D02F /* AppDelegate.swift */,
 				53138AD8213758BC00C3D02F /* LaunchScreen.storyboard */,
@@ -93,13 +96,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		53138AED21375FD600C3D02F /* Dependency Container */ = {
+		53138AED21375FD600C3D02F /* DependencyContainer */ = {
 			isa = PBXGroup;
 			children = (
 				53138AEE213761C400C3D02F /* DependencyContainer.swift */,
 				53138AF02137623600C3D02F /* Assemblers */,
 			);
-			path = "Dependency Container";
+			path = DependencyContainer;
 			sourceTree = "<group>";
 		};
 		53138AF02137623600C3D02F /* Assemblers */ = {
@@ -113,6 +116,14 @@
 				53138AFB2137649B00C3D02F /* ServiceAssembly.swift */,
 			);
 			path = Assemblers;
+			sourceTree = "<group>";
+		};
+		53138B012137D45B00C3D02F /* EntryPoint */ = {
+			isa = PBXGroup;
+			children = (
+				53138AFD2137D2A100C3D02F /* EntrypointDispatcher.swift */,
+			);
+			path = EntryPoint;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,6 +236,7 @@
 				53138AF22137624F00C3D02F /* ViewModelAssembly.swift in Sources */,
 				53138AF8213763F500C3D02F /* BuilderAssembly.swift in Sources */,
 				53138AF6213763C900C3D02F /* UtilityAssembly.swift in Sources */,
+				53138AFE2137D2A100C3D02F /* EntrypointDispatcher.swift in Sources */,
 				53138AEF213761C400C3D02F /* DependencyContainer.swift in Sources */,
 				53138AF4213762A200C3D02F /* ViewControllerAssembly.swift in Sources */,
 				53138AD0213758BB00C3D02F /* AppDelegate.swift in Sources */,
