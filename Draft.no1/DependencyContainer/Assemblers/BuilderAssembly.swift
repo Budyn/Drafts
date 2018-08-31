@@ -8,7 +8,9 @@ import Swinject
 class BuilderAssembly: Assembly {
 
     func assemble(container: Container) {
-
+        container.register(DashboardBuilder.self) { res in
+            DashboardBuilderImp(dependencyResolver: res)
+        }
     }
 
 }

@@ -16,7 +16,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         entryPointDispatcher = container.resolver.resolve(EntryPointDispatcher.self)!
         entryPointDispatcher.startApp()
         
-
         return true
     }
 

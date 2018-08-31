@@ -19,6 +19,11 @@
 		53138AFA2137647400C3D02F /* FlowControllerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53138AF92137647400C3D02F /* FlowControllerAssembly.swift */; };
 		53138AFC2137649B00C3D02F /* ServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53138AFB2137649B00C3D02F /* ServiceAssembly.swift */; };
 		53138AFE2137D2A100C3D02F /* EntrypointDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53138AFD2137D2A100C3D02F /* EntrypointDispatcher.swift */; };
+		53580B9F2138113D00C2FE0D /* FlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53580B9E2138113D00C2FE0D /* FlowController.swift */; };
+		53580BA12138132300C2FE0D /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53580BA02138132300C2FE0D /* Coordinator.swift */; };
+		53580BA32138147100C2FE0D /* DashboardFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53580BA22138147100C2FE0D /* DashboardFlowController.swift */; };
+		53580BA52138148D00C2FE0D /* DashboardBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53580BA42138148D00C2FE0D /* DashboardBuilder.swift */; };
+		53580BA7213814B100C2FE0D /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53580BA6213814B100C2FE0D /* DashboardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +41,11 @@
 		53138AF92137647400C3D02F /* FlowControllerAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowControllerAssembly.swift; sourceTree = "<group>"; };
 		53138AFB2137649B00C3D02F /* ServiceAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAssembly.swift; sourceTree = "<group>"; };
 		53138AFD2137D2A100C3D02F /* EntrypointDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntrypointDispatcher.swift; sourceTree = "<group>"; };
+		53580B9E2138113D00C2FE0D /* FlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowController.swift; sourceTree = "<group>"; };
+		53580BA02138132300C2FE0D /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		53580BA22138147100C2FE0D /* DashboardFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardFlowController.swift; sourceTree = "<group>"; };
+		53580BA42138148D00C2FE0D /* DashboardBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardBuilder.swift; sourceTree = "<group>"; };
+		53580BA6213814B100C2FE0D /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,10 +80,15 @@
 		53138ACE213758BB00C3D02F /* Draft.no1 */ = {
 			isa = PBXGroup;
 			children = (
+				53580BA22138147100C2FE0D /* DashboardFlowController.swift */,
+				53580BA6213814B100C2FE0D /* DashboardViewController.swift */,
+				53580BA42138148D00C2FE0D /* DashboardBuilder.swift */,
 				53138B012137D45B00C3D02F /* EntryPoint */,
 				53138AED21375FD600C3D02F /* DependencyContainer */,
 				53138AE12137591600C3D02F /* Resources */,
 				53138ACF213758BB00C3D02F /* AppDelegate.swift */,
+				53580B9E2138113D00C2FE0D /* FlowController.swift */,
+				53580BA02138132300C2FE0D /* Coordinator.swift */,
 				53138AD8213758BC00C3D02F /* LaunchScreen.storyboard */,
 				53138ADB213758BC00C3D02F /* Info.plist */,
 			);
@@ -232,11 +247,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				53138AFA2137647400C3D02F /* FlowControllerAssembly.swift in Sources */,
+				53580BA7213814B100C2FE0D /* DashboardViewController.swift in Sources */,
 				53138AFC2137649B00C3D02F /* ServiceAssembly.swift in Sources */,
 				53138AF22137624F00C3D02F /* ViewModelAssembly.swift in Sources */,
+				53580B9F2138113D00C2FE0D /* FlowController.swift in Sources */,
 				53138AF8213763F500C3D02F /* BuilderAssembly.swift in Sources */,
 				53138AF6213763C900C3D02F /* UtilityAssembly.swift in Sources */,
+				53580BA52138148D00C2FE0D /* DashboardBuilder.swift in Sources */,
+				53580BA12138132300C2FE0D /* Coordinator.swift in Sources */,
 				53138AFE2137D2A100C3D02F /* EntrypointDispatcher.swift in Sources */,
+				53580BA32138147100C2FE0D /* DashboardFlowController.swift in Sources */,
 				53138AEF213761C400C3D02F /* DependencyContainer.swift in Sources */,
 				53138AF4213762A200C3D02F /* ViewControllerAssembly.swift in Sources */,
 				53138AD0213758BB00C3D02F /* AppDelegate.swift in Sources */,

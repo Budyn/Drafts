@@ -8,7 +8,9 @@ import Swinject
 class ViewControllerAssembly: Assembly {
 
     func assemble(container: Container) {
-
+        container.register(DashboardViewController.self) { _ in
+            DashboardViewController()
+        }
     }
 
 }

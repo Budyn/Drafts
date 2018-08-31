@@ -13,13 +13,16 @@ protocol EntryPointDispatcher {
 
 class EntryPointDispatcherImp: EntryPointDispatcher {
 
+    private lazy var coordinator: Coordinator = {
+        return AppCoordinator()
+    }()
+
     private lazy var window: UIWindow = {
         return UIWindow(frame: UIScreen.main.bounds)
     }()
 
     func startApp() {
         let vc = UIViewController()
-        vc.view.backgroundColor = .red
         window.rootViewController = vc
         window.makeKeyAndVisible()
     }
