@@ -3,4 +3,5 @@
 
 Draft.no1 uses:
 
+- [x] Coordinator and FlowController patterns for UI navigation
 - [x] IoC - Dependency Injection pattern with one global dependency container [[Swinject](https://github.com/Swinject/Swinject)]
