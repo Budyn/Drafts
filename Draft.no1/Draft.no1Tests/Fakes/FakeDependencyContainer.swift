@@ -9,14 +9,9 @@ import Draft_no1
 
 class FakeDependencyContainer: DependencyContainer {
 
-    var resolver: Resolver {
-        return assembler.resolver
-    }
-
-    private lazy var assembler: Assembler = {
+    lazy var assembler: Assembler = {
         return Assembler([FakeFlowControllerAssembly(),
                           FakeUtilityAssembly()])
     }()
-
 
 }

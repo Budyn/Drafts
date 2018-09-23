@@ -7,17 +7,23 @@ import Swinject
 
 protocol DependencyContainer {
 
-    var resolver: Resolver { get }
+    var assembler: Assembler { get }
+
+    func resolve<T>(_ type: T.Type) -> T
+
+}
+
+extension DependencyContainer {
+
+    func resolve<T>(_ type: T.Type) -> T {
+        return assembler.resolver.resolve(type)!
+    }
 
 }
 
 class DependencyContainerImp: DependencyContainer {
 
-    var resolver: Resolver {
-        return assembler.resolver
-    }
-
-    private lazy var assembler: Assembler = {
+    lazy var assembler: Assembler = {
         return Assembler([
             ViewModelAssembly(),
             ViewControllerAssembly(),
