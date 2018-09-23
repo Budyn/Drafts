@@ -10,12 +10,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     private var entryPointDispatcher: EntryPointDispatcher!
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
         let container = DependencyContainer()
         entryPointDispatcher = container.resolver.resolve(EntryPointDispatcher.self)!
         entryPointDispatcher.startApp()
-        
+
         return true
     }
 

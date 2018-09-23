@@ -5,13 +5,13 @@
 
 import UIKit
 
-class DashboardFlowController: FlowController {
+class DashboardFlowController {
 
-    var coordinator: Coordinator
+    var coordinator: Coordinator!
     var next: FlowController?
 
     private var root: UIViewController?
-    private let builder: DashboardBuilder
+    private let builder: DashboardBuilder!
 
     init(builder: DashboardBuilder) {
         self.builder = builder

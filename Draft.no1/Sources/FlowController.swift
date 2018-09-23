@@ -3,10 +3,13 @@
 // MacOS 10.13, Swift 4.0
 // Copyright © 2018 Budyn And Friends. All rights reserved.
 
-protocol FlowController {
+import UIKit
 
-    var coordinator: Coordinator { get }
-    var next: FlowController? { get }
+protocol FlowController: class {
+
+    var rootView: UIViewController? { get }
+    var coordinator: Coordinator? { get set }
+    var next: FlowController? { get set }
 
     func start()
 

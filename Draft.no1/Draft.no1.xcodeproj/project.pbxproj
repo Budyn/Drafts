@@ -7,45 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		53138AD0213758BB00C3D02F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53138ACF213758BB00C3D02F /* AppDelegate.swift */; };
-		53138AD7213758BC00C3D02F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53138AD6213758BC00C3D02F /* Assets.xcassets */; };
-		53138ADA213758BC00C3D02F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53138AD8213758BC00C3D02F /* LaunchScreen.storyboard */; };
 		53138AEA21375E2300C3D02F /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53138AE921375E2300C3D02F /* Swinject.framework */; };
-		53138AEF213761C400C3D02F /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53138AEE213761C400C3D02F /* DependencyContainer.swift */; };
-		53138AF22137624F00C3D02F /* ViewModelAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53138AF12137624F00C3D02F /* ViewModelAssembly.swift */; };
-		53138AF4213762A200C3D02F /* ViewControllerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53138AF3213762A200C3D02F /* ViewControllerAssembly.swift */; };
-		53138AF6213763C900C3D02F /* UtilityAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53138AF5213763C900C3D02F /* UtilityAssembly.swift */; };
-		53138AF8213763F500C3D02F /* BuilderAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53138AF7213763F400C3D02F /* BuilderAssembly.swift */; };
-		53138AFA2137647400C3D02F /* FlowControllerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53138AF92137647400C3D02F /* FlowControllerAssembly.swift */; };
-		53138AFC2137649B00C3D02F /* ServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53138AFB2137649B00C3D02F /* ServiceAssembly.swift */; };
-		53138AFE2137D2A100C3D02F /* EntrypointDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53138AFD2137D2A100C3D02F /* EntrypointDispatcher.swift */; };
-		53580B9F2138113D00C2FE0D /* FlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53580B9E2138113D00C2FE0D /* FlowController.swift */; };
-		53580BA12138132300C2FE0D /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53580BA02138132300C2FE0D /* Coordinator.swift */; };
-		53580BA32138147100C2FE0D /* DashboardFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53580BA22138147100C2FE0D /* DashboardFlowController.swift */; };
-		53580BA52138148D00C2FE0D /* DashboardBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53580BA42138148D00C2FE0D /* DashboardBuilder.swift */; };
-		53580BA7213814B100C2FE0D /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53580BA6213814B100C2FE0D /* DashboardViewController.swift */; };
+		53AE35702157F07C003EBF98 /* Erros+Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AE356F2157F07C003EBF98 /* Erros+Description.swift */; };
+		53ECE49321396E840011788F /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53ECE47C21396E820011788F /* DashboardViewController.swift */; };
+		53ECE49421396E840011788F /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53ECE47D21396E820011788F /* Coordinator.swift */; };
+		53ECE49521396E840011788F /* DashboardFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53ECE47E21396E830011788F /* DashboardFlowController.swift */; };
+		53ECE49621396E840011788F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53ECE48021396E830011788F /* Assets.xcassets */; };
+		53ECE49721396E840011788F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53ECE48221396E830011788F /* LaunchScreen.storyboard */; };
+		53ECE49821396E840011788F /* FlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53ECE48421396E830011788F /* FlowController.swift */; };
+		53ECE49A21396E840011788F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53ECE48621396E830011788F /* AppDelegate.swift */; };
+		53ECE49B21396E840011788F /* EntrypointDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53ECE48821396E830011788F /* EntrypointDispatcher.swift */; };
+		53ECE49C21396E840011788F /* DashboardBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53ECE48921396E830011788F /* DashboardBuilder.swift */; };
+		53ECE49D21396E840011788F /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53ECE48B21396E840011788F /* DependencyContainer.swift */; };
+		53ECE49E21396E840011788F /* ServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53ECE48D21396E840011788F /* ServiceAssembly.swift */; };
+		53ECE49F21396E840011788F /* ViewControllerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53ECE48E21396E840011788F /* ViewControllerAssembly.swift */; };
+		53ECE4A021396E840011788F /* ViewModelAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53ECE48F21396E840011788F /* ViewModelAssembly.swift */; };
+		53ECE4A121396E840011788F /* FlowControllerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53ECE49021396E840011788F /* FlowControllerAssembly.swift */; };
+		53ECE4A221396E840011788F /* BuilderAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53ECE49121396E840011788F /* BuilderAssembly.swift */; };
+		53ECE4A321396E840011788F /* UtilityAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53ECE49221396E840011788F /* UtilityAssembly.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		53138ACC213758BB00C3D02F /* Draft.no1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Draft.no1.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		53138ACF213758BB00C3D02F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		53138AD6213758BC00C3D02F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		53138AD9213758BC00C3D02F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		53138ADB213758BC00C3D02F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53138AE921375E2300C3D02F /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = Carthage/Build/iOS/Swinject.framework; sourceTree = "<group>"; };
-		53138AEE213761C400C3D02F /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
-		53138AF12137624F00C3D02F /* ViewModelAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelAssembly.swift; sourceTree = "<group>"; };
-		53138AF3213762A200C3D02F /* ViewControllerAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerAssembly.swift; sourceTree = "<group>"; };
-		53138AF5213763C900C3D02F /* UtilityAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityAssembly.swift; sourceTree = "<group>"; };
-		53138AF7213763F400C3D02F /* BuilderAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderAssembly.swift; sourceTree = "<group>"; };
-		53138AF92137647400C3D02F /* FlowControllerAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowControllerAssembly.swift; sourceTree = "<group>"; };
-		53138AFB2137649B00C3D02F /* ServiceAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAssembly.swift; sourceTree = "<group>"; };
-		53138AFD2137D2A100C3D02F /* EntrypointDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntrypointDispatcher.swift; sourceTree = "<group>"; };
-		53580B9E2138113D00C2FE0D /* FlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowController.swift; sourceTree = "<group>"; };
-		53580BA02138132300C2FE0D /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
-		53580BA22138147100C2FE0D /* DashboardFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardFlowController.swift; sourceTree = "<group>"; };
-		53580BA42138148D00C2FE0D /* DashboardBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardBuilder.swift; sourceTree = "<group>"; };
-		53580BA6213814B100C2FE0D /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		53AE356F2157F07C003EBF98 /* Erros+Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Erros+Description.swift"; sourceTree = "<group>"; };
+		53ECE47C21396E820011788F /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DashboardViewController.swift; path = Sources/DashboardViewController.swift; sourceTree = "<group>"; };
+		53ECE47D21396E820011788F /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Coordinator.swift; path = Sources/Coordinator.swift; sourceTree = "<group>"; };
+		53ECE47E21396E830011788F /* DashboardFlowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DashboardFlowController.swift; path = Sources/DashboardFlowController.swift; sourceTree = "<group>"; };
+		53ECE48021396E830011788F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		53ECE48321396E830011788F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		53ECE48421396E830011788F /* FlowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlowController.swift; path = Sources/FlowController.swift; sourceTree = "<group>"; };
+		53ECE48521396E830011788F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Sources/Info.plist; sourceTree = "<group>"; };
+		53ECE48621396E830011788F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Sources/AppDelegate.swift; sourceTree = "<group>"; };
+		53ECE48821396E830011788F /* EntrypointDispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntrypointDispatcher.swift; sourceTree = "<group>"; };
+		53ECE48921396E830011788F /* DashboardBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DashboardBuilder.swift; path = Sources/DashboardBuilder.swift; sourceTree = "<group>"; };
+		53ECE48B21396E840011788F /* DependencyContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
+		53ECE48D21396E840011788F /* ServiceAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceAssembly.swift; sourceTree = "<group>"; };
+		53ECE48E21396E840011788F /* ViewControllerAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerAssembly.swift; sourceTree = "<group>"; };
+		53ECE48F21396E840011788F /* ViewModelAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelAssembly.swift; sourceTree = "<group>"; };
+		53ECE49021396E840011788F /* FlowControllerAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowControllerAssembly.swift; sourceTree = "<group>"; };
+		53ECE49121396E840011788F /* BuilderAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuilderAssembly.swift; sourceTree = "<group>"; };
+		53ECE49221396E840011788F /* UtilityAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilityAssembly.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +65,18 @@
 		53138AC3213758BB00C3D02F = {
 			isa = PBXGroup;
 			children = (
-				53138ACE213758BB00C3D02F /* Draft.no1 */,
+				53ECE47D21396E820011788F /* Coordinator.swift */,
+				53ECE48221396E830011788F /* LaunchScreen.storyboard */,
+				53ECE48921396E830011788F /* DashboardBuilder.swift */,
+				53ECE48421396E830011788F /* FlowController.swift */,
+				53ECE47E21396E830011788F /* DashboardFlowController.swift */,
+				53ECE47C21396E820011788F /* DashboardViewController.swift */,
+				53AE356F2157F07C003EBF98 /* Erros+Description.swift */,
+				53ECE48A21396E840011788F /* DependencyContainer */,
+				53ECE48721396E830011788F /* EntryPoint */,
+				53ECE48621396E830011788F /* AppDelegate.swift */,
+				53ECE48521396E830011788F /* Info.plist */,
+				53ECE47F21396E830011788F /* Resources */,
 				53138ACD213758BB00C3D02F /* Products */,
 				53138AE821375E2200C3D02F /* Frameworks */,
 			);
@@ -77,32 +90,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		53138ACE213758BB00C3D02F /* Draft.no1 */ = {
-			isa = PBXGroup;
-			children = (
-				53580BA22138147100C2FE0D /* DashboardFlowController.swift */,
-				53580BA6213814B100C2FE0D /* DashboardViewController.swift */,
-				53580BA42138148D00C2FE0D /* DashboardBuilder.swift */,
-				53138B012137D45B00C3D02F /* EntryPoint */,
-				53138AED21375FD600C3D02F /* DependencyContainer */,
-				53138AE12137591600C3D02F /* Resources */,
-				53138ACF213758BB00C3D02F /* AppDelegate.swift */,
-				53580B9E2138113D00C2FE0D /* FlowController.swift */,
-				53580BA02138132300C2FE0D /* Coordinator.swift */,
-				53138AD8213758BC00C3D02F /* LaunchScreen.storyboard */,
-				53138ADB213758BC00C3D02F /* Info.plist */,
-			);
-			path = Draft.no1;
-			sourceTree = "<group>";
-		};
-		53138AE12137591600C3D02F /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				53138AD6213758BC00C3D02F /* Assets.xcassets */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
 		53138AE821375E2200C3D02F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -111,34 +98,45 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		53138AED21375FD600C3D02F /* DependencyContainer */ = {
+		53ECE47F21396E830011788F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				53138AEE213761C400C3D02F /* DependencyContainer.swift */,
-				53138AF02137623600C3D02F /* Assemblers */,
+				53ECE48021396E830011788F /* Assets.xcassets */,
 			);
-			path = DependencyContainer;
+			name = Resources;
+			path = Sources/Resources;
 			sourceTree = "<group>";
 		};
-		53138AF02137623600C3D02F /* Assemblers */ = {
+		53ECE48721396E830011788F /* EntryPoint */ = {
 			isa = PBXGroup;
 			children = (
-				53138AF12137624F00C3D02F /* ViewModelAssembly.swift */,
-				53138AF3213762A200C3D02F /* ViewControllerAssembly.swift */,
-				53138AF92137647400C3D02F /* FlowControllerAssembly.swift */,
-				53138AF7213763F400C3D02F /* BuilderAssembly.swift */,
-				53138AF5213763C900C3D02F /* UtilityAssembly.swift */,
-				53138AFB2137649B00C3D02F /* ServiceAssembly.swift */,
+				53ECE48821396E830011788F /* EntrypointDispatcher.swift */,
+			);
+			name = EntryPoint;
+			path = Sources/EntryPoint;
+			sourceTree = "<group>";
+		};
+		53ECE48A21396E840011788F /* DependencyContainer */ = {
+			isa = PBXGroup;
+			children = (
+				53ECE48B21396E840011788F /* DependencyContainer.swift */,
+				53ECE48C21396E840011788F /* Assemblers */,
+			);
+			name = DependencyContainer;
+			path = Sources/DependencyContainer;
+			sourceTree = "<group>";
+		};
+		53ECE48C21396E840011788F /* Assemblers */ = {
+			isa = PBXGroup;
+			children = (
+				53ECE48D21396E840011788F /* ServiceAssembly.swift */,
+				53ECE48E21396E840011788F /* ViewControllerAssembly.swift */,
+				53ECE48F21396E840011788F /* ViewModelAssembly.swift */,
+				53ECE49021396E840011788F /* FlowControllerAssembly.swift */,
+				53ECE49121396E840011788F /* BuilderAssembly.swift */,
+				53ECE49221396E840011788F /* UtilityAssembly.swift */,
 			);
 			path = Assemblers;
-			sourceTree = "<group>";
-		};
-		53138B012137D45B00C3D02F /* EntryPoint */ = {
-			isa = PBXGroup;
-			children = (
-				53138AFD2137D2A100C3D02F /* EntrypointDispatcher.swift */,
-			);
-			path = EntryPoint;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,11 +168,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0940;
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Budyn And Friends";
 				TargetAttributes = {
 					53138ACB213758BB00C3D02F = {
 						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -201,8 +200,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53138ADA213758BC00C3D02F /* LaunchScreen.storyboard in Resources */,
-				53138AD7213758BC00C3D02F /* Assets.xcassets in Resources */,
+				53ECE49721396E840011788F /* LaunchScreen.storyboard in Resources */,
+				53ECE49621396E840011788F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,30 +245,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53138AFA2137647400C3D02F /* FlowControllerAssembly.swift in Sources */,
-				53580BA7213814B100C2FE0D /* DashboardViewController.swift in Sources */,
-				53138AFC2137649B00C3D02F /* ServiceAssembly.swift in Sources */,
-				53138AF22137624F00C3D02F /* ViewModelAssembly.swift in Sources */,
-				53580B9F2138113D00C2FE0D /* FlowController.swift in Sources */,
-				53138AF8213763F500C3D02F /* BuilderAssembly.swift in Sources */,
-				53138AF6213763C900C3D02F /* UtilityAssembly.swift in Sources */,
-				53580BA52138148D00C2FE0D /* DashboardBuilder.swift in Sources */,
-				53580BA12138132300C2FE0D /* Coordinator.swift in Sources */,
-				53138AFE2137D2A100C3D02F /* EntrypointDispatcher.swift in Sources */,
-				53580BA32138147100C2FE0D /* DashboardFlowController.swift in Sources */,
-				53138AEF213761C400C3D02F /* DependencyContainer.swift in Sources */,
-				53138AF4213762A200C3D02F /* ViewControllerAssembly.swift in Sources */,
-				53138AD0213758BB00C3D02F /* AppDelegate.swift in Sources */,
+				53AE35702157F07C003EBF98 /* Erros+Description.swift in Sources */,
+				53ECE49421396E840011788F /* Coordinator.swift in Sources */,
+				53ECE49521396E840011788F /* DashboardFlowController.swift in Sources */,
+				53ECE4A021396E840011788F /* ViewModelAssembly.swift in Sources */,
+				53ECE49E21396E840011788F /* ServiceAssembly.swift in Sources */,
+				53ECE49A21396E840011788F /* AppDelegate.swift in Sources */,
+				53ECE4A121396E840011788F /* FlowControllerAssembly.swift in Sources */,
+				53ECE4A321396E840011788F /* UtilityAssembly.swift in Sources */,
+				53ECE49321396E840011788F /* DashboardViewController.swift in Sources */,
+				53ECE49B21396E840011788F /* EntrypointDispatcher.swift in Sources */,
+				53ECE49F21396E840011788F /* ViewControllerAssembly.swift in Sources */,
+				53ECE49821396E840011788F /* FlowController.swift in Sources */,
+				53ECE49D21396E840011788F /* DependencyContainer.swift in Sources */,
+				53ECE4A221396E840011788F /* BuilderAssembly.swift in Sources */,
+				53ECE49C21396E840011788F /* DashboardBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		53138AD8213758BC00C3D02F /* LaunchScreen.storyboard */ = {
+		53ECE48221396E830011788F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				53138AD9213758BC00C3D02F /* Base */,
+				53ECE48321396E830011788F /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -281,6 +281,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -334,6 +335,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -341,6 +343,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -387,6 +390,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -401,7 +405,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = Draft.no1/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -409,7 +413,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "app.budyn.Draft-no1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -424,7 +428,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = Draft.no1/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -432,7 +436,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "app.budyn.Draft-no1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
