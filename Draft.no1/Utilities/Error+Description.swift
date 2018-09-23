@@ -8,10 +8,7 @@ import Foundation
 extension Error where Self: RawRepresentable, Self.RawValue == String {
 
     var description: String? {
-        guard let decomposingRegex = try? NSRegularExpression(pattern: decomposingRegex) else {
-            return nil
-        }
-
+        let decomposingRegex = try! NSRegularExpression(pattern: decomposingRegexFormat)
         let decomposingRange = NSRange(location: 0, length: rawValue.count)
         let decomposed = decomposingRegex.stringByReplacingMatches(in: rawValue,
                                                                    range: decomposingRange,
@@ -24,7 +21,7 @@ extension Error where Self: RawRepresentable, Self.RawValue == String {
         return String(firstChar).capitalized + string.dropFirst().lowercased()
     }
 
-    private var decomposingRegex: String {
+    private var decomposingRegexFormat: String {
         return "([a-z])([A-Z])"
     }
 

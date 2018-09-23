@@ -12,12 +12,12 @@ class FakeFlowController: FlowController {
 
     var isStarted: Bool = false
 
-    var rootView: UIViewController?
+    var rootViewController: UIViewController?
     var coordinator: Coordinator?
     var next: FlowController?
 
     func start() {
-        rootView = UIViewController()
+        rootViewController = UIViewController()
         isStarted = true
     }
 

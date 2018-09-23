@@ -5,7 +5,13 @@
 
 import Swinject
 
-class DependencyContainer {
+protocol DependencyContainer {
+
+    var resolver: Resolver { get }
+
+}
+
+class DependencyContainerImp: DependencyContainer {
 
     var resolver: Resolver {
         return assembler.resolver

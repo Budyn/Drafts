@@ -4,9 +4,15 @@
 // Copyright © 2018 Budyn And Friends. All rights reserved.
 
 import Swinject
+@testable
+import Draft_no1
 
 class FakeFlowControllerAssembly: Assembly {
 
-    func assemble(container: Container) {}
+    func assemble(container: Container) {
+        container.register(Coordinator.self) { _ in
+            FakeCoordinator()
+        }
+    }
 
 }

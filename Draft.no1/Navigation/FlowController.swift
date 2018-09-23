@@ -7,7 +7,7 @@ import UIKit
 
 protocol FlowController: class {
 
-    var rootView: UIViewController? { get }
+    var rootViewController: UIViewController? { get }
     var coordinator: Coordinator? { get set }
     var next: FlowController? { get set }
 

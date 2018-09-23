@@ -8,6 +8,9 @@ import Swinject
 class FlowControllerAssembly: Assembly {
 
     func assemble(container: Container) {
+        container.register(Coordinator.self) { _ in
+            AppCoordinator()
+        }
         container.register(DashboardFlowController.self) { res in
             DashboardFlowController(builder: res.resolve(DashboardBuilder.self)!)
         }

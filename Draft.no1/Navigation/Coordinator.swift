@@ -62,7 +62,7 @@ class AppCoordinator: Coordinator {
     private func getLastFlow(from fromFlow: FlowController) throws -> FlowController {
         guard
             let nextFlow = fromFlow.next,
-            nextFlow.rootView != nil
+            nextFlow.rootViewController != nil
         else { return fromFlow }
 
         return try getLastFlow(from: nextFlow)
