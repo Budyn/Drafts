@@ -9,7 +9,9 @@ enum CoordinatorError: String, Error {
 
 }
 
-protocol Coordinator {
+protocol Coordinator: class {
+
+    var rootFlow: FlowController? { get }
 
     func link(_ flowController: FlowController)
 
@@ -35,6 +37,7 @@ class AppCoordinator: Coordinator {
     }
 
     private func set(rootFlow: FlowController) {
+        rootFlow.coordinator = self
         self.rootFlow = rootFlow
     }
 

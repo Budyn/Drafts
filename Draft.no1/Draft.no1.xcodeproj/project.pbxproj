@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		53138AEA21375E2300C3D02F /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53138AE921375E2300C3D02F /* Swinject.framework */; };
 		53AE35702157F07C003EBF98 /* Erros+Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AE356F2157F07C003EBF98 /* Erros+Description.swift */; };
+		53AE358221582B79003EBF98 /* AppCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AE358121582B79003EBF98 /* AppCoordinatorTests.swift */; };
+		53AE358421583081003EBF98 /* FakeDependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AE358321583081003EBF98 /* FakeDependencyContainer.swift */; };
+		53AE358621583106003EBF98 /* FakeFlowControllerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AE358521583106003EBF98 /* FakeFlowControllerAssembly.swift */; };
+		53AE35892158339B003EBF98 /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53138AE921375E2300C3D02F /* Swinject.framework */; };
+		53AE358C215837B6003EBF98 /* FakeFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AE358B215837B6003EBF98 /* FakeFlowController.swift */; };
 		53ECE49321396E840011788F /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53ECE47C21396E820011788F /* DashboardViewController.swift */; };
 		53ECE49421396E840011788F /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53ECE47D21396E820011788F /* Coordinator.swift */; };
 		53ECE49521396E840011788F /* DashboardFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53ECE47E21396E830011788F /* DashboardFlowController.swift */; };
@@ -27,10 +32,26 @@
 		53ECE4A321396E840011788F /* UtilityAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53ECE49221396E840011788F /* UtilityAssembly.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		53AE357C21582B22003EBF98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 53138AC4213758BB00C3D02F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53138ACB213758BB00C3D02F;
+			remoteInfo = Draft.no1;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		53138ACC213758BB00C3D02F /* Draft.no1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Draft.no1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53138AE921375E2300C3D02F /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = Carthage/Build/iOS/Swinject.framework; sourceTree = "<group>"; };
 		53AE356F2157F07C003EBF98 /* Erros+Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Erros+Description.swift"; sourceTree = "<group>"; };
+		53AE357721582B22003EBF98 /* Draft.no1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Draft.no1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		53AE357B21582B22003EBF98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53AE358121582B79003EBF98 /* AppCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorTests.swift; sourceTree = "<group>"; };
+		53AE358321583081003EBF98 /* FakeDependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeDependencyContainer.swift; sourceTree = "<group>"; };
+		53AE358521583106003EBF98 /* FakeFlowControllerAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeFlowControllerAssembly.swift; sourceTree = "<group>"; };
+		53AE358B215837B6003EBF98 /* FakeFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeFlowController.swift; sourceTree = "<group>"; };
 		53ECE47C21396E820011788F /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DashboardViewController.swift; path = Sources/DashboardViewController.swift; sourceTree = "<group>"; };
 		53ECE47D21396E820011788F /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Coordinator.swift; path = Sources/Coordinator.swift; sourceTree = "<group>"; };
 		53ECE47E21396E830011788F /* DashboardFlowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DashboardFlowController.swift; path = Sources/DashboardFlowController.swift; sourceTree = "<group>"; };
@@ -59,6 +80,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		53AE357421582B22003EBF98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53AE35892158339B003EBF98 /* Swinject.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -77,6 +106,7 @@
 				53ECE48621396E830011788F /* AppDelegate.swift */,
 				53ECE48521396E830011788F /* Info.plist */,
 				53ECE47F21396E830011788F /* Resources */,
+				53AE357821582B22003EBF98 /* Draft.no1Tests */,
 				53138ACD213758BB00C3D02F /* Products */,
 				53138AE821375E2200C3D02F /* Frameworks */,
 			);
@@ -86,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				53138ACC213758BB00C3D02F /* Draft.no1.app */,
+				53AE357721582B22003EBF98 /* Draft.no1Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -96,6 +127,26 @@
 				53138AE921375E2300C3D02F /* Swinject.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		53AE357821582B22003EBF98 /* Draft.no1Tests */ = {
+			isa = PBXGroup;
+			children = (
+				53AE358721583153003EBF98 /* Fakes */,
+				53AE358121582B79003EBF98 /* AppCoordinatorTests.swift */,
+				53AE357B21582B22003EBF98 /* Info.plist */,
+			);
+			path = Draft.no1Tests;
+			sourceTree = "<group>";
+		};
+		53AE358721583153003EBF98 /* Fakes */ = {
+			isa = PBXGroup;
+			children = (
+				53AE358B215837B6003EBF98 /* FakeFlowController.swift */,
+				53AE358521583106003EBF98 /* FakeFlowControllerAssembly.swift */,
+				53AE358321583081003EBF98 /* FakeDependencyContainer.swift */,
+			);
+			path = Fakes;
 			sourceTree = "<group>";
 		};
 		53ECE47F21396E830011788F /* Resources */ = {
@@ -161,19 +212,42 @@
 			productReference = 53138ACC213758BB00C3D02F /* Draft.no1.app */;
 			productType = "com.apple.product-type.application";
 		};
+		53AE357621582B22003EBF98 /* Draft.no1Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53AE357E21582B22003EBF98 /* Build configuration list for PBXNativeTarget "Draft.no1Tests" */;
+			buildPhases = (
+				53AE357321582B22003EBF98 /* Sources */,
+				53AE357421582B22003EBF98 /* Frameworks */,
+				53AE357521582B22003EBF98 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				53AE357D21582B22003EBF98 /* PBXTargetDependency */,
+			);
+			name = Draft.no1Tests;
+			productName = Draft.no1Tests;
+			productReference = 53AE357721582B22003EBF98 /* Draft.no1Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		53138AC4213758BB00C3D02F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0940;
+				LastSwiftUpdateCheck = 1000;
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Budyn And Friends";
 				TargetAttributes = {
 					53138ACB213758BB00C3D02F = {
 						CreatedOnToolsVersion = 9.4;
 						LastSwiftMigration = 1000;
+					};
+					53AE357621582B22003EBF98 = {
+						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
+						TestTargetID = 53138ACB213758BB00C3D02F;
 					};
 				};
 			};
@@ -191,6 +265,7 @@
 			projectRoot = "";
 			targets = (
 				53138ACB213758BB00C3D02F /* Draft.no1 */,
+				53AE357621582B22003EBF98 /* Draft.no1Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -202,6 +277,13 @@
 			files = (
 				53ECE49721396E840011788F /* LaunchScreen.storyboard in Resources */,
 				53ECE49621396E840011788F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53AE357521582B22003EBF98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,7 +304,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
 		53138AEC21375ED500C3D02F /* Carthage - version script */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -263,7 +345,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		53AE357321582B22003EBF98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53AE358221582B79003EBF98 /* AppCoordinatorTests.swift in Sources */,
+				53AE358621583106003EBF98 /* FakeFlowControllerAssembly.swift in Sources */,
+				53AE358C215837B6003EBF98 /* FakeFlowController.swift in Sources */,
+				53AE358421583081003EBF98 /* FakeDependencyContainer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		53AE357D21582B22003EBF98 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 53138ACB213758BB00C3D02F /* Draft.no1 */;
+			targetProxy = 53AE357C21582B22003EBF98 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		53ECE48221396E830011788F /* LaunchScreen.storyboard */ = {
@@ -441,6 +542,62 @@
 			};
 			name = Release;
 		};
+		53AE357F21582B22003EBF98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5ELVSN39EP;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Draft.no1Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.baf.Draft-no1Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Draft.no1.app/Draft.no1";
+			};
+			name = Debug;
+		};
+		53AE358021582B22003EBF98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5ELVSN39EP;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Draft.no1Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.baf.Draft-no1Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Draft.no1.app/Draft.no1";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -458,6 +615,15 @@
 			buildConfigurations = (
 				53138ADF213758BC00C3D02F /* Debug */,
 				53138AE0213758BC00C3D02F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53AE357E21582B22003EBF98 /* Build configuration list for PBXNativeTarget "Draft.no1Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53AE357F21582B22003EBF98 /* Debug */,
+				53AE358021582B22003EBF98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
