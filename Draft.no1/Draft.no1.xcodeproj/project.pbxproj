@@ -40,6 +40,7 @@
 		53AE35CF21586C0B003EBF98 /* FlowControllerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AE35BD21586C0B003EBF98 /* FlowControllerAssembly.swift */; };
 		53AE35D021586C0B003EBF98 /* BuilderAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AE35BE21586C0B003EBF98 /* BuilderAssembly.swift */; };
 		53AE35D121586C0B003EBF98 /* UtilityAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AE35BF21586C0B003EBF98 /* UtilityAssembly.swift */; };
+		53AE35D321586CF0003EBF98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53AE35D221586CF0003EBF98 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,8 @@
 		53AE35BD21586C0B003EBF98 /* FlowControllerAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowControllerAssembly.swift; sourceTree = "<group>"; };
 		53AE35BE21586C0B003EBF98 /* BuilderAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuilderAssembly.swift; sourceTree = "<group>"; };
 		53AE35BF21586C0B003EBF98 /* UtilityAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilityAssembly.swift; sourceTree = "<group>"; };
+		53AE35D221586CF0003EBF98 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		53AE35D421586D0A003EBF98 /* cart */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = cart; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +181,8 @@
 				53AE35B721586C0B003EBF98 /* DependencyContainer */,
 				53AE35B521586C0B003EBF98 /* AppDelegate.swift */,
 				53AE35B621586C0B003EBF98 /* Info.plist */,
+				53AE35D221586CF0003EBF98 /* LaunchScreen.storyboard */,
+				53AE35D421586D0A003EBF98 /* cart */,
 				53AE35A721586C0B003EBF98 /* Resources */,
 			);
 			path = Sources;
@@ -335,6 +340,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				53AE35C021586C0B003EBF98 /* Assets.xcassets in Resources */,
+				53AE35D321586CF0003EBF98 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
