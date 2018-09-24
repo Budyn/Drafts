@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		53138AEA21375E2300C3D02F /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53138AE921375E2300C3D02F /* Swinject.framework */; };
-		53AE35702157F07C003EBF98 /* Error+Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AE356F2157F07C003EBF98 /* Error+Description.swift */; };
 		53AE358221582B79003EBF98 /* AppCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AE358121582B79003EBF98 /* AppCoordinatorTests.swift */; };
 		53AE358421583081003EBF98 /* FakeDependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AE358321583081003EBF98 /* FakeDependencyContainer.swift */; };
 		53AE358621583106003EBF98 /* FakeFlowControllerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AE358521583106003EBF98 /* FakeFlowControllerAssembly.swift */; };
@@ -19,28 +18,28 @@
 		53AE3592215843CE003EBF98 /* FakeWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AE3591215843CE003EBF98 /* FakeWindow.swift */; };
 		53AE3594215844CE003EBF98 /* FakeUtilityAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AE3593215844CE003EBF98 /* FakeUtilityAssembly.swift */; };
 		53AE35992158510F003EBF98 /* Error+DescriptionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AE35982158510F003EBF98 /* Error+DescriptionTests.swift */; };
-		53AE359B215857C0003EBF98 /* EntryPointBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AE359A215857C0003EBF98 /* EntryPointBuilder.swift */; };
 		53AE359D215863F4003EBF98 /* UtilityAssemblyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AE359C215863F4003EBF98 /* UtilityAssemblyTests.swift */; };
 		53AE359F2158657A003EBF98 /* FakeEntryPointBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AE359E2158657A003EBF98 /* FakeEntryPointBuilder.swift */; };
 		53AE35A12158692F003EBF98 /* BuilderAssemblyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AE35A02158692F003EBF98 /* BuilderAssemblyTests.swift */; };
 		53AE35A321586948003EBF98 /* ViewControllerAssemblyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AE35A221586948003EBF98 /* ViewControllerAssemblyTests.swift */; };
 		53AE35A52158695E003EBF98 /* FlowControllerAssemblyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AE35A42158695E003EBF98 /* FlowControllerAssemblyTests.swift */; };
-		53ECE49321396E840011788F /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53ECE47C21396E820011788F /* DashboardViewController.swift */; };
-		53ECE49421396E840011788F /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53ECE47D21396E820011788F /* Coordinator.swift */; };
-		53ECE49521396E840011788F /* DashboardFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53ECE47E21396E830011788F /* DashboardFlowController.swift */; };
-		53ECE49621396E840011788F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53ECE48021396E830011788F /* Assets.xcassets */; };
-		53ECE49721396E840011788F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53ECE48221396E830011788F /* LaunchScreen.storyboard */; };
-		53ECE49821396E840011788F /* FlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53ECE48421396E830011788F /* FlowController.swift */; };
-		53ECE49A21396E840011788F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53ECE48621396E830011788F /* AppDelegate.swift */; };
-		53ECE49B21396E840011788F /* EntrypointDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53ECE48821396E830011788F /* EntrypointDispatcher.swift */; };
-		53ECE49C21396E840011788F /* DashboardBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53ECE48921396E830011788F /* DashboardBuilder.swift */; };
-		53ECE49D21396E840011788F /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53ECE48B21396E840011788F /* DependencyContainer.swift */; };
-		53ECE49E21396E840011788F /* ServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53ECE48D21396E840011788F /* ServiceAssembly.swift */; };
-		53ECE49F21396E840011788F /* ViewControllerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53ECE48E21396E840011788F /* ViewControllerAssembly.swift */; };
-		53ECE4A021396E840011788F /* ViewModelAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53ECE48F21396E840011788F /* ViewModelAssembly.swift */; };
-		53ECE4A121396E840011788F /* FlowControllerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53ECE49021396E840011788F /* FlowControllerAssembly.swift */; };
-		53ECE4A221396E840011788F /* BuilderAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53ECE49121396E840011788F /* BuilderAssembly.swift */; };
-		53ECE4A321396E840011788F /* UtilityAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53ECE49221396E840011788F /* UtilityAssembly.swift */; };
+		53AE35C021586C0B003EBF98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53AE35A821586C0B003EBF98 /* Assets.xcassets */; };
+		53AE35C121586C0B003EBF98 /* FlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AE35AA21586C0B003EBF98 /* FlowController.swift */; };
+		53AE35C221586C0B003EBF98 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AE35AB21586C0B003EBF98 /* Coordinator.swift */; };
+		53AE35C321586C0B003EBF98 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AE35AD21586C0B003EBF98 /* DashboardViewController.swift */; };
+		53AE35C421586C0B003EBF98 /* DashboardBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AE35AE21586C0B003EBF98 /* DashboardBuilder.swift */; };
+		53AE35C521586C0B003EBF98 /* DashboardFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AE35AF21586C0B003EBF98 /* DashboardFlowController.swift */; };
+		53AE35C621586C0B003EBF98 /* Error+Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AE35B121586C0B003EBF98 /* Error+Description.swift */; };
+		53AE35C721586C0B003EBF98 /* EntrypointDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AE35B321586C0B003EBF98 /* EntrypointDispatcher.swift */; };
+		53AE35C821586C0B003EBF98 /* EntryPointBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AE35B421586C0B003EBF98 /* EntryPointBuilder.swift */; };
+		53AE35C921586C0B003EBF98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AE35B521586C0B003EBF98 /* AppDelegate.swift */; };
+		53AE35CB21586C0B003EBF98 /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AE35B821586C0B003EBF98 /* DependencyContainer.swift */; };
+		53AE35CC21586C0B003EBF98 /* ServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AE35BA21586C0B003EBF98 /* ServiceAssembly.swift */; };
+		53AE35CD21586C0B003EBF98 /* ViewControllerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AE35BB21586C0B003EBF98 /* ViewControllerAssembly.swift */; };
+		53AE35CE21586C0B003EBF98 /* ViewModelAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AE35BC21586C0B003EBF98 /* ViewModelAssembly.swift */; };
+		53AE35CF21586C0B003EBF98 /* FlowControllerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AE35BD21586C0B003EBF98 /* FlowControllerAssembly.swift */; };
+		53AE35D021586C0B003EBF98 /* BuilderAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AE35BE21586C0B003EBF98 /* BuilderAssembly.swift */; };
+		53AE35D121586C0B003EBF98 /* UtilityAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AE35BF21586C0B003EBF98 /* UtilityAssembly.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +55,6 @@
 /* Begin PBXFileReference section */
 		53138ACC213758BB00C3D02F /* Draft.no1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Draft.no1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53138AE921375E2300C3D02F /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = Carthage/Build/iOS/Swinject.framework; sourceTree = "<group>"; };
-		53AE356F2157F07C003EBF98 /* Error+Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Error+Description.swift"; sourceTree = "<group>"; };
 		53AE357721582B22003EBF98 /* Draft.no1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Draft.no1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		53AE357B21582B22003EBF98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53AE358121582B79003EBF98 /* AppCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorTests.swift; sourceTree = "<group>"; };
@@ -68,29 +66,29 @@
 		53AE3591215843CE003EBF98 /* FakeWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeWindow.swift; sourceTree = "<group>"; };
 		53AE3593215844CE003EBF98 /* FakeUtilityAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeUtilityAssembly.swift; sourceTree = "<group>"; };
 		53AE35982158510F003EBF98 /* Error+DescriptionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Error+DescriptionTests.swift"; sourceTree = "<group>"; };
-		53AE359A215857C0003EBF98 /* EntryPointBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryPointBuilder.swift; sourceTree = "<group>"; };
 		53AE359C215863F4003EBF98 /* UtilityAssemblyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityAssemblyTests.swift; sourceTree = "<group>"; };
 		53AE359E2158657A003EBF98 /* FakeEntryPointBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeEntryPointBuilder.swift; sourceTree = "<group>"; };
 		53AE35A02158692F003EBF98 /* BuilderAssemblyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderAssemblyTests.swift; sourceTree = "<group>"; };
 		53AE35A221586948003EBF98 /* ViewControllerAssemblyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerAssemblyTests.swift; sourceTree = "<group>"; };
 		53AE35A42158695E003EBF98 /* FlowControllerAssemblyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowControllerAssemblyTests.swift; sourceTree = "<group>"; };
-		53ECE47C21396E820011788F /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
-		53ECE47D21396E820011788F /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
-		53ECE47E21396E830011788F /* DashboardFlowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardFlowController.swift; sourceTree = "<group>"; };
-		53ECE48021396E830011788F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		53ECE48321396E830011788F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		53ECE48421396E830011788F /* FlowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowController.swift; sourceTree = "<group>"; };
-		53ECE48521396E830011788F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Sources/Info.plist; sourceTree = "<group>"; };
-		53ECE48621396E830011788F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Sources/AppDelegate.swift; sourceTree = "<group>"; };
-		53ECE48821396E830011788F /* EntrypointDispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntrypointDispatcher.swift; sourceTree = "<group>"; };
-		53ECE48921396E830011788F /* DashboardBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardBuilder.swift; sourceTree = "<group>"; };
-		53ECE48B21396E840011788F /* DependencyContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
-		53ECE48D21396E840011788F /* ServiceAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceAssembly.swift; sourceTree = "<group>"; };
-		53ECE48E21396E840011788F /* ViewControllerAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerAssembly.swift; sourceTree = "<group>"; };
-		53ECE48F21396E840011788F /* ViewModelAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelAssembly.swift; sourceTree = "<group>"; };
-		53ECE49021396E840011788F /* FlowControllerAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowControllerAssembly.swift; sourceTree = "<group>"; };
-		53ECE49121396E840011788F /* BuilderAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuilderAssembly.swift; sourceTree = "<group>"; };
-		53ECE49221396E840011788F /* UtilityAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilityAssembly.swift; sourceTree = "<group>"; };
+		53AE35A821586C0B003EBF98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		53AE35AA21586C0B003EBF98 /* FlowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowController.swift; sourceTree = "<group>"; };
+		53AE35AB21586C0B003EBF98 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		53AE35AD21586C0B003EBF98 /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		53AE35AE21586C0B003EBF98 /* DashboardBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardBuilder.swift; sourceTree = "<group>"; };
+		53AE35AF21586C0B003EBF98 /* DashboardFlowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardFlowController.swift; sourceTree = "<group>"; };
+		53AE35B121586C0B003EBF98 /* Error+Description.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Error+Description.swift"; sourceTree = "<group>"; };
+		53AE35B321586C0B003EBF98 /* EntrypointDispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntrypointDispatcher.swift; sourceTree = "<group>"; };
+		53AE35B421586C0B003EBF98 /* EntryPointBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryPointBuilder.swift; sourceTree = "<group>"; };
+		53AE35B521586C0B003EBF98 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		53AE35B621586C0B003EBF98 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53AE35B821586C0B003EBF98 /* DependencyContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
+		53AE35BA21586C0B003EBF98 /* ServiceAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceAssembly.swift; sourceTree = "<group>"; };
+		53AE35BB21586C0B003EBF98 /* ViewControllerAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerAssembly.swift; sourceTree = "<group>"; };
+		53AE35BC21586C0B003EBF98 /* ViewModelAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelAssembly.swift; sourceTree = "<group>"; };
+		53AE35BD21586C0B003EBF98 /* FlowControllerAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowControllerAssembly.swift; sourceTree = "<group>"; };
+		53AE35BE21586C0B003EBF98 /* BuilderAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuilderAssembly.swift; sourceTree = "<group>"; };
+		53AE35BF21586C0B003EBF98 /* UtilityAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilityAssembly.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,15 +114,7 @@
 		53138AC3213758BB00C3D02F = {
 			isa = PBXGroup;
 			children = (
-				53AE359521585058003EBF98 /* Dashboard */,
-				53AE359621585083003EBF98 /* Navigation */,
-				53ECE48721396E830011788F /* EntryPoint */,
-				53ECE48A21396E840011788F /* DependencyContainer */,
-				53ECE48621396E830011788F /* AppDelegate.swift */,
-				53ECE48521396E830011788F /* Info.plist */,
-				53ECE48221396E830011788F /* LaunchScreen.storyboard */,
-				53AE35972158509F003EBF98 /* Utilities */,
-				53ECE47F21396E830011788F /* Resources */,
+				53AE35A621586C0B003EBF98 /* Sources */,
 				53AE357821582B22003EBF98 /* Draft.no1Tests */,
 				53138ACD213758BB00C3D02F /* Products */,
 				53138AE821375E2200C3D02F /* Frameworks */,
@@ -178,71 +168,83 @@
 			path = Fakes;
 			sourceTree = "<group>";
 		};
-		53AE359521585058003EBF98 /* Dashboard */ = {
+		53AE35A621586C0B003EBF98 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				53ECE47E21396E830011788F /* DashboardFlowController.swift */,
-				53ECE47C21396E820011788F /* DashboardViewController.swift */,
-				53ECE48921396E830011788F /* DashboardBuilder.swift */,
+				53AE35AC21586C0B003EBF98 /* Dashboard */,
+				53AE35B221586C0B003EBF98 /* EntryPoint */,
+				53AE35A921586C0B003EBF98 /* Navigation */,
+				53AE35B021586C0B003EBF98 /* Utilities */,
+				53AE35B721586C0B003EBF98 /* DependencyContainer */,
+				53AE35B521586C0B003EBF98 /* AppDelegate.swift */,
+				53AE35B621586C0B003EBF98 /* Info.plist */,
+				53AE35A721586C0B003EBF98 /* Resources */,
 			);
-			path = Dashboard;
+			path = Sources;
 			sourceTree = "<group>";
 		};
-		53AE359621585083003EBF98 /* Navigation */ = {
+		53AE35A721586C0B003EBF98 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				53ECE47D21396E820011788F /* Coordinator.swift */,
-				53ECE48421396E830011788F /* FlowController.swift */,
+				53AE35A821586C0B003EBF98 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		53AE35A921586C0B003EBF98 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				53AE35AA21586C0B003EBF98 /* FlowController.swift */,
+				53AE35AB21586C0B003EBF98 /* Coordinator.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
 		};
-		53AE35972158509F003EBF98 /* Utilities */ = {
+		53AE35AC21586C0B003EBF98 /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
-				53AE356F2157F07C003EBF98 /* Error+Description.swift */,
+				53AE35AD21586C0B003EBF98 /* DashboardViewController.swift */,
+				53AE35AE21586C0B003EBF98 /* DashboardBuilder.swift */,
+				53AE35AF21586C0B003EBF98 /* DashboardFlowController.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		53AE35B021586C0B003EBF98 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				53AE35B121586C0B003EBF98 /* Error+Description.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
 		};
-		53ECE47F21396E830011788F /* Resources */ = {
+		53AE35B221586C0B003EBF98 /* EntryPoint */ = {
 			isa = PBXGroup;
 			children = (
-				53ECE48021396E830011788F /* Assets.xcassets */,
+				53AE35B321586C0B003EBF98 /* EntrypointDispatcher.swift */,
+				53AE35B421586C0B003EBF98 /* EntryPointBuilder.swift */,
 			);
-			name = Resources;
-			path = Sources/Resources;
+			path = EntryPoint;
 			sourceTree = "<group>";
 		};
-		53ECE48721396E830011788F /* EntryPoint */ = {
+		53AE35B721586C0B003EBF98 /* DependencyContainer */ = {
 			isa = PBXGroup;
 			children = (
-				53ECE48821396E830011788F /* EntrypointDispatcher.swift */,
-				53AE359A215857C0003EBF98 /* EntryPointBuilder.swift */,
+				53AE35B821586C0B003EBF98 /* DependencyContainer.swift */,
+				53AE35B921586C0B003EBF98 /* Assemblers */,
 			);
-			name = EntryPoint;
-			path = Sources/EntryPoint;
+			path = DependencyContainer;
 			sourceTree = "<group>";
 		};
-		53ECE48A21396E840011788F /* DependencyContainer */ = {
+		53AE35B921586C0B003EBF98 /* Assemblers */ = {
 			isa = PBXGroup;
 			children = (
-				53ECE48B21396E840011788F /* DependencyContainer.swift */,
-				53ECE48C21396E840011788F /* Assemblers */,
-			);
-			name = DependencyContainer;
-			path = Sources/DependencyContainer;
-			sourceTree = "<group>";
-		};
-		53ECE48C21396E840011788F /* Assemblers */ = {
-			isa = PBXGroup;
-			children = (
-				53ECE49021396E840011788F /* FlowControllerAssembly.swift */,
-				53ECE48D21396E840011788F /* ServiceAssembly.swift */,
-				53ECE48E21396E840011788F /* ViewControllerAssembly.swift */,
-				53ECE48F21396E840011788F /* ViewModelAssembly.swift */,
-				53ECE49121396E840011788F /* BuilderAssembly.swift */,
-				53ECE49221396E840011788F /* UtilityAssembly.swift */,
+				53AE35BA21586C0B003EBF98 /* ServiceAssembly.swift */,
+				53AE35BB21586C0B003EBF98 /* ViewControllerAssembly.swift */,
+				53AE35BC21586C0B003EBF98 /* ViewModelAssembly.swift */,
+				53AE35BD21586C0B003EBF98 /* FlowControllerAssembly.swift */,
+				53AE35BE21586C0B003EBF98 /* BuilderAssembly.swift */,
+				53AE35BF21586C0B003EBF98 /* UtilityAssembly.swift */,
 			);
 			path = Assemblers;
 			sourceTree = "<group>";
@@ -332,8 +334,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53ECE49721396E840011788F /* LaunchScreen.storyboard in Resources */,
-				53ECE49621396E840011788F /* Assets.xcassets in Resources */,
+				53AE35C021586C0B003EBF98 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,22 +385,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53AE35702157F07C003EBF98 /* Error+Description.swift in Sources */,
-				53ECE49421396E840011788F /* Coordinator.swift in Sources */,
-				53ECE49521396E840011788F /* DashboardFlowController.swift in Sources */,
-				53ECE4A021396E840011788F /* ViewModelAssembly.swift in Sources */,
-				53ECE49E21396E840011788F /* ServiceAssembly.swift in Sources */,
-				53AE359B215857C0003EBF98 /* EntryPointBuilder.swift in Sources */,
-				53ECE49A21396E840011788F /* AppDelegate.swift in Sources */,
-				53ECE4A121396E840011788F /* FlowControllerAssembly.swift in Sources */,
-				53ECE4A321396E840011788F /* UtilityAssembly.swift in Sources */,
-				53ECE49321396E840011788F /* DashboardViewController.swift in Sources */,
-				53ECE49B21396E840011788F /* EntrypointDispatcher.swift in Sources */,
-				53ECE49F21396E840011788F /* ViewControllerAssembly.swift in Sources */,
-				53ECE49821396E840011788F /* FlowController.swift in Sources */,
-				53ECE49D21396E840011788F /* DependencyContainer.swift in Sources */,
-				53ECE4A221396E840011788F /* BuilderAssembly.swift in Sources */,
-				53ECE49C21396E840011788F /* DashboardBuilder.swift in Sources */,
+				53AE35C421586C0B003EBF98 /* DashboardBuilder.swift in Sources */,
+				53AE35C721586C0B003EBF98 /* EntrypointDispatcher.swift in Sources */,
+				53AE35CE21586C0B003EBF98 /* ViewModelAssembly.swift in Sources */,
+				53AE35CD21586C0B003EBF98 /* ViewControllerAssembly.swift in Sources */,
+				53AE35D121586C0B003EBF98 /* UtilityAssembly.swift in Sources */,
+				53AE35C221586C0B003EBF98 /* Coordinator.swift in Sources */,
+				53AE35C921586C0B003EBF98 /* AppDelegate.swift in Sources */,
+				53AE35C321586C0B003EBF98 /* DashboardViewController.swift in Sources */,
+				53AE35D021586C0B003EBF98 /* BuilderAssembly.swift in Sources */,
+				53AE35CF21586C0B003EBF98 /* FlowControllerAssembly.swift in Sources */,
+				53AE35C621586C0B003EBF98 /* Error+Description.swift in Sources */,
+				53AE35CB21586C0B003EBF98 /* DependencyContainer.swift in Sources */,
+				53AE35CC21586C0B003EBF98 /* ServiceAssembly.swift in Sources */,
+				53AE35C821586C0B003EBF98 /* EntryPointBuilder.swift in Sources */,
+				53AE35C121586C0B003EBF98 /* FlowController.swift in Sources */,
+				53AE35C521586C0B003EBF98 /* DashboardFlowController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,17 +434,6 @@
 			targetProxy = 53AE357C21582B22003EBF98 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		53ECE48221396E830011788F /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				53ECE48321396E830011788F /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		53138ADC213758BC00C3D02F /* Debug */ = {
@@ -613,6 +603,7 @@
 		53AE357F21582B22003EBF98 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -642,6 +633,7 @@
 		53AE358021582B22003EBF98 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
