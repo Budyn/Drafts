@@ -70,5 +70,82 @@ class AppCoordinatorTests: XCTestCase {
         XCTAssertTrue(fakeFlowController.isStarted)
     }
 
+    func test_whenUnLinkingLastLinkedFlow_thenPreviousFlowNextIsNil() {
+        // For
+        let rootFakeFlowController = FakeFlowController()
+        let lastFakeFlowController = FakeFlowController()
+
+        sut.link(rootFakeFlowController)
+        sut.link(lastFakeFlowController)
+
+        // When
+        sut.unlink(lastFakeFlowController)
+
+        // Then
+        XCTAssertNotNil(rootFakeFlowController)
+        XCTAssertNil(rootFakeFlowController.next)
+        XCTAssertTrue(sut.rootFlow === rootFakeFlowController)
+    }
+
+    func test_whenUnLinkingRootFlow_thenLastFlowIsNewRoot() {
+        // For
+        let rootFakeFlowController = FakeFlowController()
+        let lastFakeFlowController = FakeFlowController()
+
+        // When
+        sut.link(rootFakeFlowController)
+        sut.link(lastFakeFlowController)
+
+        XCTAssertTrue(sut.rootFlow === rootFakeFlowController)
+        XCTAssertTrue(sut.rootFlow!.next! === lastFakeFlowController)
+        XCTAssertNil(sut.rootFlow!.next!.next)
+
+        sut.unlink(rootFakeFlowController)
+
+        // Then
+        XCTAssertNil(lastFakeFlowController.next)
+        XCTAssertTrue(sut.rootFlow === lastFakeFlowController)
+    }
+
+    func test_whenUnLinkingRootFlow_IfThereIsNoNextFlow_thenDoNothing() {
+        // For
+        let rootFakeFlowController = FakeFlowController()
+
+        // When
+        sut.link(rootFakeFlowController)
+
+        XCTAssertTrue(sut.rootFlow === rootFakeFlowController)
+        XCTAssertNil(sut.rootFlow!.next)
+
+        sut.unlink(rootFakeFlowController)
+
+        // Then
+        XCTAssertTrue(sut.rootFlow === rootFakeFlowController)
+    }
+
+    func test_whenUnLinkingMiddleFlow_thenNextFromMidleFlowShouldBeAssigned_asNextOfPreviousFlow() {
+        // For
+        let rootFakeFlowController = FakeFlowController()
+        let middleFakeFlowController = FakeFlowController()
+        let lastFakeFlowController = FakeFlowController()
+
+        // When
+        sut.link(rootFakeFlowController)
+        sut.link(middleFakeFlowController)
+        sut.link(lastFakeFlowController)
+
+        XCTAssertTrue(sut.rootFlow === rootFakeFlowController)
+        XCTAssertTrue(sut.rootFlow!.next! === middleFakeFlowController)
+        XCTAssertTrue(sut.rootFlow!.next!.next! === lastFakeFlowController)
+        XCTAssertNil(sut.rootFlow!.next!.next!.next)
+
+        sut.unlink(middleFakeFlowController)
+
+        // Then
+        XCTAssertTrue(sut.rootFlow === rootFakeFlowController)
+        XCTAssertTrue(sut.rootFlow!.next! === lastFakeFlowController)
+        XCTAssertNil(sut.rootFlow!.next!.next)
+    }
+
 
 }

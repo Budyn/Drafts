@@ -6,6 +6,8 @@
 enum CoordinatorError: String, Error {
 
     case rootFlowControllerIsNil
+    case nextFlowControllerIsNil
+    case previousFlowControllerIsNil
 
 }
 
@@ -14,6 +16,7 @@ protocol Coordinator: class {
     var rootFlow: FlowController? { get }
 
     func link(_ flowController: FlowController)
+    func unlink(_ flowController: FlowController)
 
 }
 
@@ -36,6 +39,38 @@ class AppCoordinator: Coordinator {
         }
     }
 
+    func unlink(_ flow: FlowController) {
+        do {
+            let rootFlow = try getRootFlow()
+
+            if rootFlow === flow {
+                guard let nextFlow = flow.next else {
+                    print("You are trying to unlink root, but there is nothing for replacement.")
+                    return
+                }
+
+                self.rootFlow = nextFlow
+            }
+
+            unlink(flow, from: rootFlow)
+        } catch {
+            handle(error: error)
+        }
+    }
+
+    private func unlink(_ unlinkedFlow: FlowController, from fromFlow: FlowController) {
+        let beforeFlow = getFlow(before: unlinkedFlow, from: fromFlow)
+        beforeFlow?.next = unlinkedFlow.next
+    }
+
+    private func getRootFlow() throws -> FlowController {
+        guard let rootFlow = rootFlow else {
+            throw CoordinatorError.rootFlowControllerIsNil
+        }
+
+        return rootFlow
+    }
+
     private func set(rootFlow: FlowController) {
         rootFlow.coordinator = self
         self.rootFlow = rootFlow
@@ -49,6 +84,22 @@ class AppCoordinator: Coordinator {
 
     private func start(flow: FlowController) {
         flow.start()
+    }
+
+    private func getFlow(before beforeFlow: FlowController, from fromFlow: FlowController) -> FlowController? {
+        if fromFlow === beforeFlow {
+            return nil
+        }
+
+        guard let nextFlow = fromFlow.next else {
+            return nil
+        }
+
+        if nextFlow === beforeFlow {
+            return fromFlow
+        }
+
+        return getFlow(before: beforeFlow, from: nextFlow)
     }
 
     private func getLastFlow() throws -> FlowController {
@@ -69,15 +120,8 @@ class AppCoordinator: Coordinator {
     }
 
     private func handle(error: Error) {
-        guard
-            let error = error as? CoordinatorError,
-            let errorDescription = error.description
-        else {
-            print("Unrecognized Coordinator error")
-            return
-        }
-
-        print(errorDescription)
+        // todo: Think about testable error handling
+        print((error as! CoordinatorError).description!)
     }
 
 }

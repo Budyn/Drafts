@@ -23,5 +23,9 @@ class FakeCoordinator: Coordinator {
             flowController.start()
         }
     }
+
+    func unlink(_ flowController: FlowController) {
+        rootFlow?.next = nil
+    }
     
 }
