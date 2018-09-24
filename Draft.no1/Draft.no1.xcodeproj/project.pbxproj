@@ -19,6 +19,7 @@
 		53AE3592215843CE003EBF98 /* FakeWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AE3591215843CE003EBF98 /* FakeWindow.swift */; };
 		53AE3594215844CE003EBF98 /* FakeUtilsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AE3593215844CE003EBF98 /* FakeUtilsAssembly.swift */; };
 		53AE35992158510F003EBF98 /* Error+DescriptionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AE35982158510F003EBF98 /* Error+DescriptionTests.swift */; };
+		53AE359B215857C0003EBF98 /* EntryPointBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AE359A215857C0003EBF98 /* EntryPointBuilder.swift */; };
 		53ECE49321396E840011788F /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53ECE47C21396E820011788F /* DashboardViewController.swift */; };
 		53ECE49421396E840011788F /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53ECE47D21396E820011788F /* Coordinator.swift */; };
 		53ECE49521396E840011788F /* DashboardFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53ECE47E21396E830011788F /* DashboardFlowController.swift */; };
@@ -62,6 +63,7 @@
 		53AE3591215843CE003EBF98 /* FakeWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeWindow.swift; sourceTree = "<group>"; };
 		53AE3593215844CE003EBF98 /* FakeUtilsAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeUtilsAssembly.swift; sourceTree = "<group>"; };
 		53AE35982158510F003EBF98 /* Error+DescriptionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Error+DescriptionTests.swift"; sourceTree = "<group>"; };
+		53AE359A215857C0003EBF98 /* EntryPointBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryPointBuilder.swift; sourceTree = "<group>"; };
 		53ECE47C21396E820011788F /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		53ECE47D21396E820011788F /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		53ECE47E21396E830011788F /* DashboardFlowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardFlowController.swift; sourceTree = "<group>"; };
@@ -201,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				53ECE48821396E830011788F /* EntrypointDispatcher.swift */,
+				53AE359A215857C0003EBF98 /* EntryPointBuilder.swift */,
 			);
 			name = EntryPoint;
 			path = Sources/EntryPoint;
@@ -371,6 +374,7 @@
 				53ECE49521396E840011788F /* DashboardFlowController.swift in Sources */,
 				53ECE4A021396E840011788F /* ViewModelAssembly.swift in Sources */,
 				53ECE49E21396E840011788F /* ServiceAssembly.swift in Sources */,
+				53AE359B215857C0003EBF98 /* EntryPointBuilder.swift in Sources */,
 				53ECE49A21396E840011788F /* AppDelegate.swift in Sources */,
 				53ECE4A121396E840011788F /* FlowControllerAssembly.swift in Sources */,
 				53ECE4A321396E840011788F /* UtilityAssembly.swift in Sources */,

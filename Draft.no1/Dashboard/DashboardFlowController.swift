@@ -5,12 +5,13 @@
 
 import UIKit
 
-class DashboardFlowController {
+class DashboardFlowController: FlowController {
 
-    var coordinator: Coordinator!
+    var rootViewController: UIViewController?
+    var coordinator: Coordinator?
     var next: FlowController?
 
-    private var root: UIViewController?
+    private let window = UIWindow(frame: UIScreen.main.bounds)
     private let builder: DashboardBuilder!
 
     init(builder: DashboardBuilder) {
@@ -19,7 +20,9 @@ class DashboardFlowController {
 
     func start() {
         let dashboardVC = builder.buildDashboardViewController()
-        root = dashboardVC
+        rootViewController = dashboardVC
+        window.rootViewController = dashboardVC
+        window.makeKeyAndVisible()
     }
 
 }

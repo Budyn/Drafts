@@ -11,6 +11,9 @@ class BuilderAssembly: Assembly {
         container.register(DashboardBuilder.self) { res in
             DashboardBuilderImp(dependencyResolver: res)
         }
+        container.register(EntryPointBuilder.self) { res in
+            EntryPointBuilderImp(dependencyResolver: res)
+        }
     }
 
 }

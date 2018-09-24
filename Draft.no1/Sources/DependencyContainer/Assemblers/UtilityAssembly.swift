@@ -14,7 +14,7 @@ class UtilityAssembly: Assembly {
         }
         container.register(EntryPointDispatcher.self) { res in
             EntryPointDispatcherImp(coordinator: res.resolve(Coordinator.self)!,
-                                    window: res.resolve(UIWindow.self)!)
+                                    builder: res.resolve(EntryPointBuilder.self)!)
         }
     }
 

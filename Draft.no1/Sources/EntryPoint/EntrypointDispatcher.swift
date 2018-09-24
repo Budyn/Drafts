@@ -14,17 +14,18 @@ protocol EntryPointDispatcher {
 class EntryPointDispatcherImp: EntryPointDispatcher {
 
     private let coordinator: Coordinator
-    private let window: UIWindow
+    private let builder: EntryPointBuilder
 
-    init(coordinator: Coordinator, window: UIWindow) {
+    init(coordinator: Coordinator,
+         builder: EntryPointBuilder) {
+
         self.coordinator = coordinator
-        self.window = window
+        self.builder = builder
     }
 
     func startApp() {
-        let vc = UIViewController()
-        window.rootViewController = vc
-        window.makeKeyAndVisible()
+        let dashboardFlowController = builder.buildDashboardFlowController()
+        coordinator.link(dashboardFlowController)
     }
 
 }
