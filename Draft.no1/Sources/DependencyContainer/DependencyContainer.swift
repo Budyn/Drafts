@@ -9,14 +9,14 @@ protocol DependencyContainer {
 
     var assembler: Assembler { get }
 
-    func resolve<T>(_ type: T.Type) -> T
+    func resolve<T>(_ type: T.Type) -> T?
 
 }
 
 extension DependencyContainer {
 
-    func resolve<T>(_ type: T.Type) -> T {
-        return assembler.resolver.resolve(type)!
+    func resolve<T>(_ type: T.Type) -> T? {
+        return assembler.resolver.resolve(type)
     }
 
 }

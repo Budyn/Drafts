@@ -9,9 +9,6 @@ import Swinject
 class UtilityAssembly: Assembly {
 
     func assemble(container: Container) {
-        container.register(UIWindow.self) { _ in
-            UIWindow()
-        }
         container.register(EntryPointDispatcher.self) { res in
             EntryPointDispatcherImp(coordinator: res.resolve(Coordinator.self)!,
                                     builder: res.resolve(EntryPointBuilder.self)!)

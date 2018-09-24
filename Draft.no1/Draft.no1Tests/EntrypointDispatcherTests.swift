@@ -12,15 +12,15 @@ import Draft_no1
 class EntrypointDispatcherTests: XCTestCase {
 
     var sut: EntryPointDispatcher!
-    var fakeWindow: UIWindow!
+    var fakeEntryPointBuilder: EntryPointBuilder!
     var fakeCoordinator: Coordinator!
 
     override func setUp() {
         super.setUp()
-        fakeWindow = FakeWindow()
+        fakeEntryPointBuilder = FakeEntryPointBuilder()
         fakeCoordinator = FakeCoordinator()
         sut = EntryPointDispatcherImp(coordinator: fakeCoordinator,
-                                      window: fakeWindow)
+                                      builder: fakeEntryPointBuilder)
     }
 
     override func tearDown() {
@@ -28,28 +28,4 @@ class EntrypointDispatcherTests: XCTestCase {
         super.tearDown()
     }
 
-    func test_whenStartingApp_thenWindowRootIsSet() {
-        // for
-        let rootFlowController = FakeFlowController()
-        fakeCoordinator.link(rootFlowController)
-
-        //when
-        sut.startApp()
-
-        // then
-        XCTAssertNotNil(fakeWindow.rootViewController)
-        XCTAssertNotNil(fakeWindow.rootViewController === rootFlowController.rootViewController)
-    }
-
-    func test_whenStartingApp_thenWindowIsKey() {
-        // for
-        let rootFlowController = FakeFlowController()
-        fakeCoordinator.link(rootFlowController)
-
-        //when
-        sut.startApp()
-
-        // then
-        XCTAssertTrue(fakeWindow.isKeyWindow)
-    }
 }

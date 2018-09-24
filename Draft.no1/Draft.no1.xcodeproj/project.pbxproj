@@ -17,9 +17,14 @@
 		53AE358E21584036003EBF98 /* EntrypointDispatcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AE358D21584036003EBF98 /* EntrypointDispatcherTests.swift */; };
 		53AE35902158424B003EBF98 /* FakeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AE358F2158424B003EBF98 /* FakeCoordinator.swift */; };
 		53AE3592215843CE003EBF98 /* FakeWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AE3591215843CE003EBF98 /* FakeWindow.swift */; };
-		53AE3594215844CE003EBF98 /* FakeUtilsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AE3593215844CE003EBF98 /* FakeUtilsAssembly.swift */; };
+		53AE3594215844CE003EBF98 /* FakeUtilityAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AE3593215844CE003EBF98 /* FakeUtilityAssembly.swift */; };
 		53AE35992158510F003EBF98 /* Error+DescriptionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AE35982158510F003EBF98 /* Error+DescriptionTests.swift */; };
 		53AE359B215857C0003EBF98 /* EntryPointBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AE359A215857C0003EBF98 /* EntryPointBuilder.swift */; };
+		53AE359D215863F4003EBF98 /* UtilityAssemblyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AE359C215863F4003EBF98 /* UtilityAssemblyTests.swift */; };
+		53AE359F2158657A003EBF98 /* FakeEntryPointBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AE359E2158657A003EBF98 /* FakeEntryPointBuilder.swift */; };
+		53AE35A12158692F003EBF98 /* BuilderAssemblyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AE35A02158692F003EBF98 /* BuilderAssemblyTests.swift */; };
+		53AE35A321586948003EBF98 /* ViewControllerAssemblyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AE35A221586948003EBF98 /* ViewControllerAssemblyTests.swift */; };
+		53AE35A52158695E003EBF98 /* FlowControllerAssemblyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AE35A42158695E003EBF98 /* FlowControllerAssemblyTests.swift */; };
 		53ECE49321396E840011788F /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53ECE47C21396E820011788F /* DashboardViewController.swift */; };
 		53ECE49421396E840011788F /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53ECE47D21396E820011788F /* Coordinator.swift */; };
 		53ECE49521396E840011788F /* DashboardFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53ECE47E21396E830011788F /* DashboardFlowController.swift */; };
@@ -61,9 +66,14 @@
 		53AE358D21584036003EBF98 /* EntrypointDispatcherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntrypointDispatcherTests.swift; sourceTree = "<group>"; };
 		53AE358F2158424B003EBF98 /* FakeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeCoordinator.swift; sourceTree = "<group>"; };
 		53AE3591215843CE003EBF98 /* FakeWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeWindow.swift; sourceTree = "<group>"; };
-		53AE3593215844CE003EBF98 /* FakeUtilsAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeUtilsAssembly.swift; sourceTree = "<group>"; };
+		53AE3593215844CE003EBF98 /* FakeUtilityAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeUtilityAssembly.swift; sourceTree = "<group>"; };
 		53AE35982158510F003EBF98 /* Error+DescriptionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Error+DescriptionTests.swift"; sourceTree = "<group>"; };
 		53AE359A215857C0003EBF98 /* EntryPointBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryPointBuilder.swift; sourceTree = "<group>"; };
+		53AE359C215863F4003EBF98 /* UtilityAssemblyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityAssemblyTests.swift; sourceTree = "<group>"; };
+		53AE359E2158657A003EBF98 /* FakeEntryPointBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeEntryPointBuilder.swift; sourceTree = "<group>"; };
+		53AE35A02158692F003EBF98 /* BuilderAssemblyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderAssemblyTests.swift; sourceTree = "<group>"; };
+		53AE35A221586948003EBF98 /* ViewControllerAssemblyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerAssemblyTests.swift; sourceTree = "<group>"; };
+		53AE35A42158695E003EBF98 /* FlowControllerAssemblyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowControllerAssemblyTests.swift; sourceTree = "<group>"; };
 		53ECE47C21396E820011788F /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		53ECE47D21396E820011788F /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		53ECE47E21396E830011788F /* DashboardFlowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardFlowController.swift; sourceTree = "<group>"; };
@@ -145,6 +155,10 @@
 				53AE358121582B79003EBF98 /* AppCoordinatorTests.swift */,
 				53AE358D21584036003EBF98 /* EntrypointDispatcherTests.swift */,
 				53AE35982158510F003EBF98 /* Error+DescriptionTests.swift */,
+				53AE359C215863F4003EBF98 /* UtilityAssemblyTests.swift */,
+				53AE35A02158692F003EBF98 /* BuilderAssemblyTests.swift */,
+				53AE35A221586948003EBF98 /* ViewControllerAssemblyTests.swift */,
+				53AE35A42158695E003EBF98 /* FlowControllerAssemblyTests.swift */,
 				53AE357B21582B22003EBF98 /* Info.plist */,
 			);
 			path = Draft.no1Tests;
@@ -158,7 +172,8 @@
 				53AE358B215837B6003EBF98 /* FakeFlowController.swift */,
 				53AE358321583081003EBF98 /* FakeDependencyContainer.swift */,
 				53AE358521583106003EBF98 /* FakeFlowControllerAssembly.swift */,
-				53AE3593215844CE003EBF98 /* FakeUtilsAssembly.swift */,
+				53AE3593215844CE003EBF98 /* FakeUtilityAssembly.swift */,
+				53AE359E2158657A003EBF98 /* FakeEntryPointBuilder.swift */,
 			);
 			path = Fakes;
 			sourceTree = "<group>";
@@ -222,10 +237,10 @@
 		53ECE48C21396E840011788F /* Assemblers */ = {
 			isa = PBXGroup;
 			children = (
+				53ECE49021396E840011788F /* FlowControllerAssembly.swift */,
 				53ECE48D21396E840011788F /* ServiceAssembly.swift */,
 				53ECE48E21396E840011788F /* ViewControllerAssembly.swift */,
 				53ECE48F21396E840011788F /* ViewModelAssembly.swift */,
-				53ECE49021396E840011788F /* FlowControllerAssembly.swift */,
 				53ECE49121396E840011788F /* BuilderAssembly.swift */,
 				53ECE49221396E840011788F /* UtilityAssembly.swift */,
 			);
@@ -392,15 +407,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53AE359D215863F4003EBF98 /* UtilityAssemblyTests.swift in Sources */,
 				53AE358E21584036003EBF98 /* EntrypointDispatcherTests.swift in Sources */,
 				53AE35992158510F003EBF98 /* Error+DescriptionTests.swift in Sources */,
+				53AE35A12158692F003EBF98 /* BuilderAssemblyTests.swift in Sources */,
+				53AE359F2158657A003EBF98 /* FakeEntryPointBuilder.swift in Sources */,
+				53AE35A52158695E003EBF98 /* FlowControllerAssemblyTests.swift in Sources */,
 				53AE358221582B79003EBF98 /* AppCoordinatorTests.swift in Sources */,
+				53AE35A321586948003EBF98 /* ViewControllerAssemblyTests.swift in Sources */,
 				53AE358621583106003EBF98 /* FakeFlowControllerAssembly.swift in Sources */,
 				53AE35902158424B003EBF98 /* FakeCoordinator.swift in Sources */,
 				53AE3592215843CE003EBF98 /* FakeWindow.swift in Sources */,
 				53AE358C215837B6003EBF98 /* FakeFlowController.swift in Sources */,
 				53AE358421583081003EBF98 /* FakeDependencyContainer.swift in Sources */,
-				53AE3594215844CE003EBF98 /* FakeUtilsAssembly.swift in Sources */,
+				53AE3594215844CE003EBF98 /* FakeUtilityAssembly.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
